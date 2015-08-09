@@ -1,0 +1,77 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+### domaintools - an R API interface to the DomainTools API
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+The following functions are implemented:
+
+- `domaintools_api_key`:	Get or set DOMAINTOOLS_API_KEY value
+- `domaintools_username`:	Get or set DOMAINTOOLS_API_USERNAME value
+- `domain_profile`:	Domain Profile
+- `hosting_history`:	Hosting History
+- `parsed_whois`:	Parsed Whois
+- `reverse_ip`:	Reverse IP
+- `reverse_ns`:	Reverse Nameserver
+- `shared_ips`:	Shared IPs
+- `whois`:	Whois Lookup
+- `whois_history`:	Whois History
+
+### News
+
+- Version 0.0.0.9000 released
+
+### Installation
+
+```{r eval=FALSE}
+devtools::install_github("hrbrmstr/domaintools")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+options(width=120)
+```
+
+### Usage
+
+```{r}
+library(domaintools)
+
+# current verison
+packageVersion("domaintools")
+
+whois("domaintools.com")
+
+whois_history("domaintools.com")
+
+domain_profile("domaintools.com")
+
+hosting_history("domaintools.com")
+
+```
+
+### Test Results
+
+```{r}
+library(domaintools)
+library(testthat)
+
+date()
+
+test_dir("tests/")
+```
+
+### Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
+By participating in this project you agree to abide by its terms.
