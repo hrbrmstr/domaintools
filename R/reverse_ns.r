@@ -20,7 +20,7 @@ reverse_ns <- function(domain, limit=NULL) {
 
   res <- POST(url,
               query=list(api_username=domaintools_username(),
-                         api_key=domaintools_api_key))
+                         api_key=domaintools_api_key()))
 
   stop_for_status(res)
 
