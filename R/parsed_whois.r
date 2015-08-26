@@ -39,7 +39,7 @@ parsed_whois <- function(domain) {
 
   res <- POST(url,
               query=list(api_username=domaintools_username(),
-                         api_key=domaintools_api_key))
+                         api_key=domaintools_api_key()))
 
   warn_for_status(res)
 
