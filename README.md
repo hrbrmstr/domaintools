@@ -16,6 +16,7 @@ The following functions are implemented:
 
 ### News
 
+-   Version 0.0.1.9000 : Bugfixes contributed by David Severski
 -   Version 0.0.0.9000 released
 
 ### Installation
@@ -31,7 +32,7 @@ library(domaintools)
 
 # current verison
 packageVersion("domaintools")
-#> [1] '0.0.0.9000'
+#> [1] '0.0.1.9000'
 
 whois("domaintools.com")
 #> $response
@@ -60,7 +61,7 @@ whois("domaintools.com")
 #> 
 #> $response$whois
 #> $response$whois$date
-#> [1] "2015-08-08"
+#> [1] "2015-08-24"
 #> 
 #> $response$whois$record
 #> [1] "Domain Name: DOMAINTOOLS.COM\nRegistry Domain ID: 1697312_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.enom.com\nRegistrar URL: www.enom.com\nUpdated Date: 2014-07-24T11:07:33.00Z\nCreation Date: 1998-08-02T04:00:00.00Z\nRegistrar Registration Expiration Date: 2017-08-01T04:00:00.00Z\nRegistrar: ENOM, INC.\nRegistrar IANA ID: 48\nDomain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited\nRegistry Registrant ID: \nRegistrant Name: DOMAIN ADMINISTRATOR\nRegistrant Organization: DOMAINTOOLS, LLC\nRegistrant Street: 2211 5TH AVENUE\nRegistrant Street: SUITE 201\nRegistrant City: SEATTLE\nRegistrant State/Province: WA\nRegistrant Postal Code: 98121\nRegistrant Country: US\nRegistrant Phone: +1.2068389035\nRegistrant Phone Ext: \nRegistrant Fax: +1.2068389056\nRegistrant Fax Ext:\nRegistrant Email: MEMBERSERVICES@DOMAINTOOLS.COM\nRegistry Admin ID: \nAdmin Name: DOMAIN ADMINISTRATOR\nAdmin Organization: DOMAINTOOLS, LLC\nAdmin Street: 2211 5TH AVENUE\nAdmin Street: SUITE 201\nAdmin City: SEATTLE\nAdmin State/Province: WA\nAdmin Postal Code: 98121\nAdmin Country: US\nAdmin Phone: +1.2068389035\nAdmin Phone Ext: \nAdmin Fax: +1.2068389056\nAdmin Fax Ext:\nAdmin Email: MEMBERSERVICES@DOMAINTOOLS.COM\nRegistry Tech ID: \nTech Name: DOMAIN ADMINISTRATOR\nTech Organization: DOMAINTOOLS, LLC\nTech Street: 2211 5TH AVENUE\nTech Street: SUITE 201\nTech City: SEATTLE\nTech State/Province: WA\nTech Postal Code: 98121\nTech Country: US\nTech Phone: +1.2068389035\nTech Phone Ext: \nTech Fax: +1.2068389056\nTech Fax Ext: \nTech Email: MEMBERSERVICES@DOMAINTOOLS.COM\nName Server: NS1.P09.DYNECT.NET\nName Server: NS2.P09.DYNECT.NET\nName Server: NS3.P09.DYNECT.NET\nName Server: NS4.P09.DYNECT.NET\nDNSSEC: unSigned\nRegistrar Abuse Contact Email: abuse@enom.com\nRegistrar Abuse Contact Phone: +1.4252982646\nURL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/\n"
@@ -109,7 +110,7 @@ whois_history("domaintools.com")
 #> 35 2014-11-08          0   DOMAINTOOLS, LLC                 1998-08-02                 2017-08-01
 #> 36 2015-06-09          0   DOMAINTOOLS, LLC                 1998-08-02                 2017-08-01
 #> 37 2015-06-10          0   DOMAINTOOLS, LLC                 1998-08-02                 2017-08-01
-#> 38 2015-08-08          0   DOMAINTOOLS, LLC                 1998-08-02                 2017-08-01
+#> 38 2015-08-24          0   DOMAINTOOLS, LLC                 1998-08-02                 2017-08-01
 #>    whois.registration.registrar                      whois.registration.statuses whois.registration.updated
 #> 1       NETWORK SOLUTIONS, INC.                                           ACTIVE                       <NA>
 #> 2                  TUCOWS, INC.                                           ACTIVE                       <NA>
@@ -235,7 +236,7 @@ domain_profile("domaintools.com")
 #> [1] "DOMAINTOOLS, LLC"
 #> 
 #> $response$registrant$domains
-#> [1] 257
+#> [1] 259
 #> 
 #> $response$registrant$product_url
 #> [1] "http://reversewhois.domaintools.com/?all[]=DOMAINTOOLS%2C+LLC&none[]="
@@ -312,7 +313,7 @@ domain_profile("domaintools.com")
 #> 
 #> $response$history$whois
 #> $response$history$whois$records
-#> [1] 3490
+#> [1] 3506
 #> 
 #> $response$history$whois$earliest_event
 #> [1] "2001-10-26"
@@ -328,6 +329,23 @@ domain_profile("domaintools.com")
 #> 
 #> $response$seo$product_url
 #> [1] "http://research.domaintools.com/seo-browser/?domain=domaintools.com"
+#> 
+#> 
+#> $response$website_data
+#> $response$website_data$response_code
+#> [1] 200
+#> 
+#> $response$website_data$title
+#> [1] "Home | DomainTools"
+#> 
+#> $response$website_data$server
+#> [1] "Here and There"
+#> 
+#> $response$website_data$meta
+#> list()
+#> 
+#> $response$website_data$product_url
+#> [1] "http://whois.domaintools.com/domaintools.com"
 
 hosting_history("domaintools.com")
 #> $response
@@ -356,7 +374,7 @@ hosting_history("domaintools.com")
 #> 
 #> $response$whois
 #> $response$whois$date
-#> [1] "2015-08-08"
+#> [1] "2015-08-24"
 #> 
 #> $response$whois$record
 #> [1] "Domain Name: DOMAINTOOLS.COM\nRegistry Domain ID: 1697312_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.enom.com\nRegistrar URL: www.enom.com\nUpdated Date: 2014-07-24T11:07:33.00Z\nCreation Date: 1998-08-02T04:00:00.00Z\nRegistrar Registration Expiration Date: 2017-08-01T04:00:00.00Z\nRegistrar: ENOM, INC.\nRegistrar IANA ID: 48\nDomain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited\nRegistry Registrant ID: \nRegistrant Name: DOMAIN ADMINISTRATOR\nRegistrant Organization: DOMAINTOOLS, LLC\nRegistrant Street: 2211 5TH AVENUE\nRegistrant Street: SUITE 201\nRegistrant City: SEATTLE\nRegistrant State/Province: WA\nRegistrant Postal Code: 98121\nRegistrant Country: US\nRegistrant Phone: +1.2068389035\nRegistrant Phone Ext: \nRegistrant Fax: +1.2068389056\nRegistrant Fax Ext:\nRegistrant Email: MEMBERSERVICES@DOMAINTOOLS.COM\nRegistry Admin ID: \nAdmin Name: DOMAIN ADMINISTRATOR\nAdmin Organization: DOMAINTOOLS, LLC\nAdmin Street: 2211 5TH AVENUE\nAdmin Street: SUITE 201\nAdmin City: SEATTLE\nAdmin State/Province: WA\nAdmin Postal Code: 98121\nAdmin Country: US\nAdmin Phone: +1.2068389035\nAdmin Phone Ext: \nAdmin Fax: +1.2068389056\nAdmin Fax Ext:\nAdmin Email: MEMBERSERVICES@DOMAINTOOLS.COM\nRegistry Tech ID: \nTech Name: DOMAIN ADMINISTRATOR\nTech Organization: DOMAINTOOLS, LLC\nTech Street: 2211 5TH AVENUE\nTech Street: SUITE 201\nTech City: SEATTLE\nTech State/Province: WA\nTech Postal Code: 98121\nTech Country: US\nTech Phone: +1.2068389035\nTech Phone Ext: \nTech Fax: +1.2068389056\nTech Fax Ext: \nTech Email: MEMBERSERVICES@DOMAINTOOLS.COM\nName Server: NS1.P09.DYNECT.NET\nName Server: NS2.P09.DYNECT.NET\nName Server: NS3.P09.DYNECT.NET\nName Server: NS4.P09.DYNECT.NET\nDNSSEC: unSigned\nRegistrar Abuse Contact Email: abuse@enom.com\nRegistrar Abuse Contact Phone: +1.4252982646\nURL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/\n"
@@ -369,7 +387,7 @@ library(domaintools)
 library(testthat)
 
 date()
-#> [1] "Sun Aug  9 15:01:06 2015"
+#> [1] "Wed Aug 26 02:27:11 2015"
 
 test_dir("tests/")
 #> testthat results ========================================================================================================

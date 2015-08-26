@@ -30,6 +30,7 @@ The following functions are implemented:
 
 ### News
 
+- Version 0.0.1.9000 : Bugfixes contributed by David Severski
 - Version 0.0.0.9000 released
 
 ### Installation

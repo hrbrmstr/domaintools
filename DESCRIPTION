@@ -1,8 +1,15 @@
 Package: domaintools
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: c(person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")))
-Description: What the package does (one paragraph).
+Title: Toolkit for Querying and Working with WHOIS and IP Address Data Provided by the DomainTools API
+Version: 0.0.1.9000
+Authors@R: c(person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")),
+             person("David", "Severski", role="ctb")
+    )
+Maintainer: Bob Rudis <bob@rudis.net>
+Description: WHOIS domain data and assocaited IP address data provide sources
+    of enrichment for information security-oriented and other types analyses.
+    The DomainTools <http://domaintools.com> API is one of the cleanest
+    sources of current and historical WHOIS data and this package provides
+    access to the core API endpoints.
 Depends: R (>= 3.2.0)
 License: MIT + file LICENSE
 LazyData: true
